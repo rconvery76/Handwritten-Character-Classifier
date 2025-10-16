@@ -86,6 +86,7 @@ class SimpleCNN(AbstractCNN):
         self.classifier = nn.Linear(w3, c.num_classes)
 
 if __name__ == "__main__":
+    # Example usage
     cfg = CNNConfig(input_channels=1, num_classes=26, conv_layers=(32, 64, 128), dropout=0.3)
     model = SimpleCNN(cfg)
     x = torch.randn(8, 1, 28, 28)        # batch of 8, preprocessed images
