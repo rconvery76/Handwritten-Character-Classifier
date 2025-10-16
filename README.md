@@ -1,3 +1,11 @@
 "# Handwritten-Character-Classifier"
 
-I have a training images folder too but it is 169MB and it wont let me upload If you know how to fix this lmk
+run pip install -r requirments.txt
+
+To download and preprocess the data set run
+python data.py
+
+This will download and preprocess the dataset and store it in
+data/processed
+
+.gitignore prevents the dataset from being pushed to github
